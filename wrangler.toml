@@ -1,0 +1,11 @@
+name = "ashutosh-portfolio"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[routes]]
+pattern = "ashutosh.dsremo.com"
+custom_domain = true
