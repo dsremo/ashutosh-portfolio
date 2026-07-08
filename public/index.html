@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ashutosh Tiwari — Backend &amp; AI Engineer · Python · FastAPI · AWS</title>
-<meta name="description" content="Backend &amp; AI engineer in Bangalore — Python, FastAPI, AWS. I ship production APIs, payment systems, ML services and RAG/LLM apps. Live projects you can try, with the code." />
+<meta name="description" content="Backend &amp; AI engineer in Bangalore — Python, FastAPI, AWS. Production work at Simplotel, plus live side-projects you can try, with the code." />
 <link rel="canonical" href="https://ashutosh.dsremo.com/" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
@@ -17,14 +17,14 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Ashutosh Tiwari" />
 <meta property="og:title" content="Ashutosh Tiwari — Backend &amp; AI Engineer" />
-<meta property="og:description" content="Backend &amp; AI engineer in Bangalore — Python, FastAPI, AWS. Production APIs, payments, ML services and RAG/LLM apps, live with the code." />
+<meta property="og:description" content="Backend &amp; AI engineer in Bangalore — Python, FastAPI, AWS. Production work at Simplotel, plus live side-projects you can try, with the code." />
 <meta property="og:url" content="https://ashutosh.dsremo.com/" />
 <meta property="og:image" content="https://ashutosh.dsremo.com/og.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Ashutosh Tiwari — Backend &amp; AI Engineer" />
-<meta name="twitter:description" content="Backend &amp; AI engineer in Bangalore — Python, FastAPI, AWS. Production APIs, payments, ML services and RAG/LLM apps, live with the code." />
+<meta name="twitter:description" content="Backend &amp; AI engineer in Bangalore — Python, FastAPI, AWS. Production work at Simplotel, plus live side-projects you can try, with the code." />
 <meta name="twitter:image" content="https://ashutosh.dsremo.com/og.png" />
 <script type="application/ld+json">
 {
@@ -33,11 +33,11 @@
   "name": "Ashutosh Tiwari",
   "url": "https://ashutosh.dsremo.com/",
   "image": "https://ashutosh.dsremo.com/og.png",
-  "jobTitle": "Backend & AI Engineer",
+  "jobTitle": "Software Engineer",
   "worksFor": { "@type": "Organization", "name": "Simplotel Technologies" },
   "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressRegion": "Karnataka", "addressCountry": "IN" },
   "alumniOf": { "@type": "EducationalOrganization", "name": "Birla Institute of Technology, Mesra" },
-  "knowsAbout": ["Python", "FastAPI", "Django", "REST APIs", "PostgreSQL", "Redis", "Docker", "Kubernetes", "AWS", "Microservices", "System Design", "LLM Integration", "RAG", "Vector Databases", "Machine Learning"],
+  "knowsAbout": ["Python", "FastAPI", "Django", "REST APIs", "PostgreSQL", "Redis", "Docker", "AWS", "Microservices", "System Design", "LLM Integration", "RAG", "Machine Learning"],
   "sameAs": [
     "https://github.com/dsremo",
     "https://www.linkedin.com/in/ashutosh-tiwari-495567203/"
@@ -50,9 +50,9 @@
 <style>
   :root{
     --paper:#F6F7F9; --card:#FFFFFF; --ink:#12151B; --ink-2:#3A4150;
-    --muted:#6B7585; --line:#E2E6EC; --line-2:#EEF1F5;
+    --muted:#5A6474; --line:#E2E6EC; --line-2:#EEF1F5;
     --accent:#B26B00; --accent-deep:#8A5200; --accent-wash:#FBF3E4;
-    --good:#1F9D6B;
+    --good:#0E7346;
     --star:58,65,80; --link:178,107,0; --topbar:rgba(246,247,249,.82);
     --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
     --body:'Hanken Grotesk',system-ui,sans-serif;
@@ -69,6 +69,7 @@
   html[data-theme="dark"]{color-scheme:dark}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
+  html,body{overflow-x:clip}
   body{
     margin:0; background:var(--paper); color:var(--ink);
     font-family:var(--body); font-size:17px; line-height:1.6;
@@ -81,6 +82,9 @@
     letter-spacing:.16em; text-transform:uppercase; color:var(--accent-deep);
   }
   h1,h2,h3{font-family:var(--display); margin:0; text-wrap:balance; letter-spacing:-.02em}
+
+  .skip{position:absolute; left:-9999px; top:auto}
+  .skip:focus{left:12px; top:12px; z-index:100; background:var(--card); color:var(--ink); padding:10px 14px; border:1px solid var(--accent); border-radius:8px; font-family:var(--mono); font-size:13px}
 
   /* ---------- top bar ---------- */
   .topbar{
@@ -99,9 +103,9 @@
     border-radius:999px; background:var(--card); color:var(--ink-2);
   }
   .dot{width:8px; height:8px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px rgba(31,157,107,.16)}
-  .theme-btn{background:var(--card); border:1px solid var(--line); color:var(--ink); width:34px; height:34px; border-radius:8px; cursor:pointer; font-size:15px; line-height:1; display:inline-flex; align-items:center; justify-content:center; transition:border-color .15s ease}
+  .theme-btn{background:var(--card); border:1px solid var(--line); color:var(--ink); width:36px; height:36px; border-radius:8px; cursor:pointer; font-size:15px; line-height:1; display:inline-flex; align-items:center; justify-content:center; transition:border-color .15s ease}
   .theme-btn:hover{border-color:var(--accent)}
-  @media(max-width:720px){ .nav a:not(.pill){display:none} }
+  @media(max-width:720px){ .nav a:not(.pill){display:none} .brand{font-size:16px} .nav{gap:14px} .theme-btn{width:40px; height:40px} }
 
   /* ---------- hero ---------- */
   .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line)}
@@ -119,13 +123,13 @@
   .btn{
     font-family:var(--mono); font-size:13px; letter-spacing:.04em; text-decoration:none;
     padding:12px 18px; border-radius:8px; border:1px solid var(--ink); color:var(--paper);
-    background:var(--ink); transition:transform .15s ease, background .15s ease;
+    background:var(--ink); transition:transform .15s ease, filter .15s ease;
   }
-  .btn:hover{transform:translateY(-1px); background:#000}
+  .btn:hover{transform:translateY(-1px); filter:brightness(1.12)}
   .btn.ghost{background:transparent; color:var(--ink)}
-  .btn.ghost:hover{background:var(--card)}
+  .btn.ghost:hover{background:var(--card); filter:none}
 
-  /* ---------- telemetry stat strip ---------- */
+  /* ---------- stat strip ---------- */
   .telemetry{border-bottom:1px solid var(--line); background:var(--card)}
   .telemetry .grid{display:grid; grid-template-columns:repeat(4,1fr)}
   .stat{padding:26px 28px; border-left:1px solid var(--line-2)}
@@ -133,33 +137,19 @@
   .stat .n{font-family:var(--display); font-weight:800; font-size:34px; letter-spacing:-.03em; font-variant-numeric:tabular-nums}
   .stat .n b{color:var(--accent); font-weight:800}
   .stat .l{font-family:var(--mono); font-size:11.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); margin-top:6px}
-  @media(max-width:720px){ .telemetry .grid{grid-template-columns:repeat(2,1fr)} .stat:nth-child(odd){border-left:0} }
+  @media(max-width:720px){ .telemetry .grid{grid-template-columns:repeat(2,1fr)} .stat:nth-child(odd){border-left:0} .stat:nth-child(n+3){border-top:1px solid var(--line-2)} }
 
   /* ---------- sections ---------- */
   section{padding:74px 0; border-bottom:1px solid var(--line)}
   .shead{display:flex; align-items:baseline; gap:16px; margin-bottom:34px}
   .shead h2{font-size:clamp(26px,3.4vw,36px); font-weight:800}
   .shead .idx{font-family:var(--mono); font-size:13px; color:var(--accent-deep); letter-spacing:.1em}
-  .lead-2{color:var(--muted); max-width:60ch; margin:-18px 0 34px; font-size:16px}
-
-  /* deployed services */
-  .svc{display:grid; gap:0; border:1px solid var(--line); border-radius:12px; overflow:hidden; background:var(--card)}
-  .svc .row{
-    display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,2fr) auto; gap:18px; align-items:center;
-    padding:18px 22px; border-top:1px solid var(--line-2); transition:background .15s ease;
-  }
-  .svc .row:first-child{border-top:0}
-  .svc .row:hover{background:var(--accent-wash)}
-  .svc .host{font-family:var(--mono); font-size:14.5px; font-weight:600; color:var(--accent-deep); text-decoration:none; display:flex; align-items:center; gap:8px}
-  .svc .host::after{content:"↗"; font-size:12px; opacity:.65}
-  .svc .host:hover{text-decoration:underline; text-decoration-color:var(--accent)}
-  .svc .desc{color:var(--ink-2); font-size:15px}
-  .svc .status{font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--good); white-space:nowrap; display:flex; align-items:center; gap:8px}
-  .svc .golive{color:var(--good); text-decoration:none; display:flex; align-items:center; gap:8px}
-  .svc .golive:hover{text-decoration:underline}
-  .svc .repo{color:var(--accent-deep); text-decoration:none; letter-spacing:.04em}
-  .svc .repo:hover{text-decoration:underline}
-  @media(max-width:720px){ .svc .row{grid-template-columns:1fr; gap:6px} .svc .status{order:-1} }
+  .lead-2{color:var(--muted); max-width:64ch; margin:-18px 0 34px; font-size:16px}
+  .about-body{max-width:66ch}
+  .about-body p{margin:0 0 18px; color:var(--ink-2); font-size:17.5px; line-height:1.7}
+  .about-body p:last-child{margin-bottom:0}
+  .about-body b{color:var(--ink); font-weight:600}
+  .about-body em{font-style:normal; color:var(--accent-deep); font-weight:600}
 
   /* project cards */
   .cards{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
@@ -169,11 +159,14 @@
     display:flex; flex-direction:column; gap:12px; transition:border-color .15s ease, transform .15s ease;
   }
   .card:hover{border-color:var(--accent); transform:translateY(-2px)}
+  .chead{display:flex; align-items:center; justify-content:space-between; gap:12px}
   .card .tag{font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-deep)}
+  .card .live{font-family:var(--mono); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--good); display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
   .card h3{font-size:21px; font-weight:800}
   .card p{margin:0; color:var(--ink-2); font-size:15px; flex:1}
+  .card code{font-family:var(--mono); font-size:.88em; background:var(--line-2); padding:1px 5px; border-radius:4px}
   .card .stk{font-family:var(--mono); font-size:12px; color:var(--muted); border-top:1px solid var(--line-2); padding-top:12px}
-  .card .lnk{font-family:var(--mono); font-size:12.5px; color:var(--accent-deep); text-decoration:none}
+  .card .lnk{font-family:var(--mono); font-size:12.5px; color:var(--accent-deep); text-decoration:none; overflow-wrap:anywhere}
   .card .lnk:hover{text-decoration:underline}
 
   /* experience */
@@ -194,58 +187,74 @@
   .stack-group .gl{font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:10px}
 
   /* contact */
-  .contact{background:var(--ink); color:var(--paper); border-bottom:0}
+  .contact{background:var(--ink); color:var(--paper); border-bottom:0; --accent:#E0982A}
+  html[data-theme="dark"] .contact{--accent:#8A5200}
   .contact h2{color:var(--paper)}
   .contact .idx{color:var(--accent)}
-  .contact .lead-2{color:#9aa4b4}
+  .contact .lead-2{color:var(--paper); opacity:.75}
   .clinks{display:flex; flex-wrap:wrap; gap:12px; margin-top:8px}
-  .clink{font-family:var(--mono); font-size:14px; text-decoration:none; color:var(--paper); border:1px solid #2b3340; padding:13px 18px; border-radius:9px; transition:background .15s ease, border-color .15s ease}
-  .clink:hover{background:#1b2027; border-color:var(--accent)}
-  .clink b{color:var(--accent); font-weight:500}
+  .clink{font-family:var(--mono); font-size:14px; text-decoration:none; color:var(--paper); border:1px solid rgba(127,127,127,.32); padding:13px 18px; border-radius:9px; transition:background .15s ease, border-color .15s ease}
+  .clink:hover{background:rgba(127,127,127,.16); border-color:var(--accent)}
+  .clink b{color:var(--accent); font-weight:600}
   footer{padding:30px 0; color:var(--muted); font-family:var(--mono); font-size:12px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px}
 
   /* reveal */
   .rv{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease}
   .rv.in{opacity:1; transform:none}
   @media(prefers-reduced-motion:reduce){ .rv{opacity:1; transform:none; transition:none} html{scroll-behavior:auto} }
-  a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:4px}
+  a:focus-visible,.btn:focus-visible,.theme-btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:4px}
 </style>
+<noscript><style>.rv{opacity:1 !important; transform:none !important}</style></noscript>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="topbar">
   <div class="wrap row">
-    <div class="brand">Ashutosh<span>.</span>Tiwari</div>
+    <div class="brand">Ashutosh Tiwari<span>.</span></div>
     <nav class="nav">
-      <a href="#deployed">Deployed</a>
-      <a href="#work">Work</a>
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
       <a href="#contact">Contact</a>
       <span class="pill"><span class="dot"></span> Open to roles</span>
-      <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+      <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme">🌙</button>
     </nav>
   </div>
 </header>
 
+<main id="main">
 <section class="hero">
   <canvas id="sky" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="eyebrow">Backend &amp; AI Engineer · Python · FastAPI · AWS · Bangalore, India</div>
     <h1>I build AI that <em>ships</em> — not AI that demos.</h1>
-    <p class="lede">LLM and voice products running in production for real users, plus an independent
-      stack of AI for the age of space. I take models from notebook to deployed service — APIs,
-      on-device inference, and the infrastructure around them.</p>
+    <p class="lede">LLM and voice products in production for real users at Simplotel, plus a self-hosted
+      stack of side projects I design, deploy, and operate end to end — payments, telemetry anomaly
+      detection, privacy tooling, and an LLM-safety architecture. From API design to on-device
+      inference to the infrastructure around them.</p>
     <div class="meta">
-      <span><b>2+ yrs</b> in production</span>
-      <span>·</span>
+      <span><b>1.5 yrs</b> experience</span>
+      <span aria-hidden="true">·</span>
       <span><b>M.Sc.</b> Mathematics &amp; Computing, BIT Mesra</span>
-      <span>·</span>
+      <span aria-hidden="true">·</span>
       <span>Python · LLMs/RAG · NLP · AWS</span>
     </div>
     <div class="cta">
       <a class="btn" href="#contact">Get in touch</a>
       <a class="btn ghost" href="#work">See the work</a>
       <a class="btn ghost" href="/Ashutosh_Tiwari_Resume.pdf" target="_blank" rel="noopener">Download résumé (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="shead rv"><span class="idx">01</span><h2>About</h2></div>
+    <div class="about-body rv">
+      <p>I'm a software engineer in Bangalore working across backend, cloud, and applied AI — I measure my work by whether it survives contact with real users. At <b>Simplotel</b> I build and ship production systems for a hotel-commerce platform: a Google Ads integration that lifted booking conversions <b>30%</b>, AI customer-engagement products — a chatbot, voicebot, and call analyzer — that raised international-client engagement <b>20%</b>, and AWS serverless automation that removed <b>~260</b> recurring support tickets a year. I also cleared a third-party security audit, remediating 32 findings across the platform.</p>
+      <p>On my own time I design, deploy, and <em>operate</em> a stack of side projects on my own infrastructure — payment orchestration, satellite-telemetry anomaly detection, privacy tooling, and a safety-first AI architecture. The four services below run right now; everything is open-source, so you can click a link, use it, then read exactly how it works.</p>
+      <p>I hold an M.Sc. in Mathematics &amp; Computing from BIT Mesra, specializing in AI and machine learning. I care about correctness, honest metrics, and systems that keep working long after launch. I'm currently open to AI/ML, backend, and full-stack roles.</p>
     </div>
   </div>
 </section>
@@ -261,99 +270,12 @@
   </div>
 </div>
 
-<section id="deployed">
-  <div class="wrap">
-    <div class="shead rv"><span class="idx">01</span><h2>Deployed &amp; operating</h2></div>
-    <p class="lead-2 rv">Not screenshots — services I run on my own domain (AWS S3/CloudFront, Cloudflare Workers, SES). All live right now.</p>
-    <div class="svc rv">
-      <div class="row">
-        <a class="host" href="https://pay.dsremo.com" target="_blank" rel="noopener">pay.dsremo.com</a>
-        <span class="desc">Payment orchestrator — idempotent API, server-enforced state machine, Razorpay integration with HMAC signature verification, webhooks, and refunds.</span>
-        <span class="status"><a class="golive" href="https://pay.dsremo.com" target="_blank" rel="noopener"><span class="dot"></span> Live ↗</a> <a class="repo" href="https://github.com/dsremo/pay-service" target="_blank" rel="noopener">· code ↗</a></span>
-      </div>
-      <div class="row">
-        <a class="host" href="https://telemetry.dsremo.com" target="_blank" rel="noopener">telemetry.dsremo.com</a>
-        <span class="desc">Satellite-telemetry anomaly detection — LSTM/TCN ensemble, FastAPI ops dashboard, single sign-on via auth.dsremo.com.</span>
-        <span class="status"><a class="golive" href="https://telemetry.dsremo.com" target="_blank" rel="noopener"><span class="dot"></span> Live ↗</a> <a class="repo" href="https://github.com/dsremo/telemetry-anomaly-detection" target="_blank" rel="noopener">· code ↗</a></span>
-      </div>
-      <div class="row">
-        <a class="host" href="https://sanitize.dsremo.com" target="_blank" rel="noopener">sanitize.dsremo.com</a>
-        <span class="desc">SanitizeMe — personal data-removal toolkit: SSO-verified own-data only, free breach checks, 225-broker opt-out letters (DPDP/GDPR/CCPA), removal tracker, AI-scraper blocker.</span>
-        <span class="status"><a class="golive" href="https://sanitize.dsremo.com" target="_blank" rel="noopener"><span class="dot"></span> Live ↗</a> <a class="repo" href="https://github.com/dsremo/sanitizeme" target="_blank" rel="noopener">· code ↗</a></span>
-      </div>
-      <div class="row">
-        <a class="host" href="https://aria.dsremo.com" target="_blank" rel="noopener">aria.dsremo.com</a>
-        <span class="desc">Interactive 3D engineering lab for the ARIA spacecraft-safety architecture — client-side mission simulations.</span>
-        <span class="status"><a class="golive" href="https://aria.dsremo.com" target="_blank" rel="noopener"><span class="dot"></span> Live ↗</a> <a class="repo" href="https://github.com/dsremo/aria" target="_blank" rel="noopener">· code ↗</a></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <div class="shead rv"><span class="idx">02</span><h2>Selected work</h2></div>
-    <p class="lead-2 rv">Built from scratch. Each one solves a real problem end to end.</p>
-    <div class="cards">
-      <article class="card rv">
-        <span class="tag">Backend · Payments</span>
-        <h3>Payment orchestrator</h3>
-        <p>A production-shaped payment service — multi-gateway router, idempotency, an enforced state machine, HMAC signature verification, refunds, and signed webhooks. Built twice: FastAPI and a live edge version on Cloudflare Workers.</p>
-        <div class="stk">Python · FastAPI · SQLAlchemy · Razorpay</div>
-        <a class="lnk" href="https://pay.dsremo.com" target="_blank" rel="noopener">pay.dsremo.com · github.com/dsremo/pay-service →</a>
-      </article>
-      <article class="card rv">
-        <span class="tag">ML · Anomaly Detection</span>
-        <h3>Telemetry Anomaly Detection</h3>
-        <p>Production satellite-telemetry anomaly detection — an LSTM/TCN ensemble with a tenant-aware ops dashboard and alerting, benchmarked on ISS/ESA/SKAB datasets. FastAPI backend, single sign-on via auth.dsremo.com.</p>
-        <div class="stk">Python · FastAPI · PyTorch · time-series</div>
-        <a class="lnk" href="https://telemetry.dsremo.com" target="_blank" rel="noopener">telemetry.dsremo.com · github.com/dsremo/telemetry-anomaly-detection →</a>
-      </article>
-      <article class="card rv">
-        <span class="tag">Backend · Dev tools</span>
-        <h3>Use-case Miner</h3>
-        <p>Mines an evidence-backed use-case checklist out of a legacy codebase so a parity rewrite can be verified one behaviour at a time — walks every entry point (HTTP routes, cron, queue consumers, CLI), enumerates reachable branches and side effects, and cites <code>file:line</code> for each. Runs fully offline; pluggable LLM backends add domain language.</p>
-        <div class="stk">Python · static analysis · multi-language · LLM pipeline</div>
-        <a class="lnk" href="https://github.com/dsremo/usecase-miner" target="_blank" rel="noopener">github.com/dsremo/usecase-miner →</a>
-      </article>
-      <article class="card rv">
-        <span class="tag">Space AI · Safety</span>
-        <h3>ARIA</h3>
-        <p>An autonomous, safety-first onboard AI architecture for spacecraft — a constitution placed above the model, an independent monitor, sealed boot, and 19 failsafes.</p>
-        <div class="stk">Python · LLMs · systems design</div>
-        <a class="lnk" href="https://aria.dsremo.com" target="_blank" rel="noopener">aria.dsremo.com · github.com/dsremo/aria →</a>
-      </article>
-      <article class="card rv">
-        <span class="tag">Privacy · Automation</span>
-        <h3>Sanitize Me</h3>
-        <p>Finds your exposed email, phone, and usernames online, checks breaches, and auto-generates DPDP/GDPR/CCPA opt-out letters for 200+ data brokers.</p>
-        <div class="stk">Python · OSINT · document generation</div>
-        <a class="lnk" href="https://sanitize.dsremo.com" target="_blank" rel="noopener">sanitize.dsremo.com · github.com/dsremo/sanitizeme →</a>
-      </article>
-      <article class="card rv">
-        <span class="tag">On-device LLM · Health</span>
-        <h3>MediScan</h3>
-        <p>An offline AI medical-triage assistant that runs an on-device LLM, built for low-connectivity and underserved communities.</p>
-        <div class="stk">Python · on-device inference</div>
-        <a class="lnk" href="https://github.com/dsremo/mediscan" target="_blank" rel="noopener">github.com/dsremo/mediscan →</a>
-      </article>
-      <article class="card rv">
-        <span class="tag">Full-stack · Serverless</span>
-        <h3>Are You Safe?</h3>
-        <p>A daily safety check-in app: press “I’m safe” once a day; miss it and your emergency contacts are alerted automatically.</p>
-        <div class="stk">React Native · TypeScript · AWS Lambda</div>
-        <a class="lnk" href="https://github.com/dsremo/are-you-safe" target="_blank" rel="noopener">github.com/dsremo/are-you-safe →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section id="experience">
   <div class="wrap">
-    <div class="shead rv"><span class="idx">03</span><h2>Experience</h2></div>
+    <div class="shead rv"><span class="idx">02</span><h2>Experience</h2></div>
     <div class="xp">
       <div class="job rv">
-        <div class="when">Mar 2024 — Present<br/>Bangalore, India</div>
+        <div class="when">Mar 2025 — Present<br/>Bangalore, India</div>
         <div>
           <h3>Software Engineer</h3>
           <div class="co">Simplotel Technologies</div>
@@ -361,7 +283,18 @@
             <li>Shipped a Google Ads integration for the hotel booking platform that lifted booking conversions by 30%.</li>
             <li>Built and deployed AI customer-engagement products — a chatbot, voicebot, and call analyzer — raising international client engagement by 20%.</li>
             <li>Engineered serverless automation (AWS Lambda, Step Functions, EventBridge, ECS, Secrets Manager) that removed ~260 recurring support tickets a year.</li>
+            <li>Cleared a third-party VAPT security audit of the platform — remediating 5 critical, 12 high, and 15 medium findings.</li>
             <li>Implemented a split-payment module enabling flexible multi-party booking workflows.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job rv">
+        <div class="when">2019 — 2024<br/>Ranchi, India</div>
+        <div>
+          <h3>M.Sc. Mathematics &amp; Computing</h3>
+          <div class="co">Birla Institute of Technology, Mesra</div>
+          <ul>
+            <li>Specialized in AI, data science, and machine learning; thesis on deep-learning route prediction.</li>
           </ul>
         </div>
       </div>
@@ -381,6 +314,57 @@
   </div>
 </section>
 
+<section id="work">
+  <div class="wrap">
+    <div class="shead rv"><span class="idx">03</span><h2>Selected work</h2></div>
+    <p class="lead-2 rv">Built from scratch — the four services below are live on my own infrastructure (AWS S3/CloudFront, Cloudflare Workers, SES). Everything is open-source, with the code.</p>
+    <div class="cards">
+      <article class="card rv">
+        <div class="chead"><span class="tag">Backend · Payments</span><span class="live"><span class="dot"></span> Live</span></div>
+        <h3>Payment orchestrator</h3>
+        <p>A payment-orchestration service — a gateway-adapter layer (Razorpay implemented), idempotency, an enforced state machine, HMAC signature verification, refunds, and signed webhooks. Built twice: a FastAPI service, and a live edge version on Cloudflare Workers.</p>
+        <div class="stk">Python · FastAPI · SQLAlchemy · Razorpay</div>
+        <a class="lnk" href="https://pay.dsremo.com" target="_blank" rel="noopener">pay.dsremo.com · github.com/dsremo/pay-service →</a>
+      </article>
+      <article class="card rv">
+        <div class="chead"><span class="tag">Backend · Dev tools</span></div>
+        <h3>Use-case miner</h3>
+        <p>Mines an evidence-backed use-case checklist out of a legacy codebase so a parity rewrite can be verified one behavior at a time — walks every entry point (HTTP routes, cron, queue consumers, CLI), enumerates reachable branches and side effects, and cites <code>file:line</code> for each. Runs fully offline; pluggable LLM backends add domain language.</p>
+        <div class="stk">Python · static analysis · multi-language · LLM pipeline</div>
+        <a class="lnk" href="https://github.com/dsremo/usecase-miner" target="_blank" rel="noopener">github.com/dsremo/usecase-miner →</a>
+      </article>
+      <article class="card rv">
+        <div class="chead"><span class="tag">ML · Anomaly detection</span><span class="live"><span class="dot"></span> Live</span></div>
+        <h3>Telemetry anomaly detection</h3>
+        <p>Satellite-telemetry anomaly detection — an LSTM/TCN ensemble with a per-user ops dashboard and alerting, evaluated against public ISS/ESA/SKAB benchmarks. FastAPI backend, single sign-on via auth.dsremo.com.</p>
+        <div class="stk">Python · FastAPI · PyTorch · time-series</div>
+        <a class="lnk" href="https://telemetry.dsremo.com" target="_blank" rel="noopener">telemetry.dsremo.com · github.com/dsremo/telemetry-anomaly-detection →</a>
+      </article>
+      <article class="card rv">
+        <div class="chead"><span class="tag">Privacy · Automation</span><span class="live"><span class="dot"></span> Live</span></div>
+        <h3>SanitizeMe</h3>
+        <p>Finds your exposed email, phone, and usernames online, checks breaches, and auto-generates DPDP/GDPR/CCPA opt-out letters for 225 data brokers — SSO-verified to your own data only.</p>
+        <div class="stk">Python · OSINT · document generation</div>
+        <a class="lnk" href="https://sanitize.dsremo.com" target="_blank" rel="noopener">sanitize.dsremo.com · github.com/dsremo/sanitizeme →</a>
+      </article>
+      <article class="card rv">
+        <div class="chead"><span class="tag">AI safety · Systems</span><span class="live"><span class="dot"></span> Live</span></div>
+        <h3>ARIA</h3>
+        <p>A design study for a safety-first AI control architecture, framed for spacecraft operations — a policy layer evaluated independently of the model, a runtime monitor, and fail-closed defaults. Explorable as an interactive browser lab.</p>
+        <div class="stk">Python · LLMs · systems design</div>
+        <a class="lnk" href="https://aria.dsremo.com" target="_blank" rel="noopener">aria.dsremo.com · github.com/dsremo/aria →</a>
+      </article>
+      <article class="card rv">
+        <div class="chead"><span class="tag">On-device LLM · Health</span></div>
+        <h3>MediScan</h3>
+        <p>An offline symptom-information prototype for low-connectivity and underserved settings — runs a local LLM (Gemma) entirely on-device, no network. A research prototype: educational, not diagnostic.</p>
+        <div class="stk">Python · on-device inference</div>
+        <a class="lnk" href="https://github.com/dsremo/mediscan" target="_blank" rel="noopener">github.com/dsremo/mediscan →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section id="stack">
   <div class="wrap">
     <div class="shead rv"><span class="idx">04</span><h2>Toolkit</h2></div>
@@ -396,13 +380,13 @@
         <div class="gl">AI / ML</div>
         <div class="stack">
           <span class="chip">PyTorch</span><span class="chip">Hugging Face</span><span class="chip">LLMs / RAG</span>
-          <span class="chip">NLP</span><span class="chip">scikit-learn</span><span class="chip">TensorFlow</span><span class="chip">CrewAI</span>
+          <span class="chip">NLP</span><span class="chip">scikit-learn</span>
         </div>
       </div>
       <div class="stack-group">
         <div class="gl">Backend &amp; Cloud</div>
         <div class="stack">
-          <span class="chip">FastAPI</span><span class="chip">Spring</span><span class="chip">REST APIs</span>
+          <span class="chip">FastAPI</span><span class="chip">Django</span><span class="chip">REST APIs</span>
           <span class="chip">AWS (Lambda · Step Functions · ECS)</span><span class="chip">Cloudflare Workers</span>
           <span class="chip">Docker</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">BigQuery</span>
         </div>
@@ -414,11 +398,11 @@
 <section id="contact" class="contact">
   <div class="wrap">
     <div class="shead rv"><span class="idx">05</span><h2>Let’s talk</h2></div>
-    <p class="lead-2 rv">Open to AI/ML, backend, full-stack, and data roles. The fastest way to reach me:</p>
+    <p class="lead-2 rv">Open to AI/ML, backend, and full-stack roles. The fastest way to reach me:</p>
     <div class="clinks rv">
       <a class="clink" href="mailto:ashutosh108t@gmail.com"><b>Email</b> &nbsp;ashutosh108t@gmail.com</a>
       <a class="clink" href="https://www.linkedin.com/in/ashutosh-tiwari-495567203/" target="_blank" rel="noopener"><b>LinkedIn</b> &nbsp;/in/ashutosh-tiwari</a>
-      <a class="clink" href="https://github.com/dsremo" target="_blank" rel="noopener"><b>GitHub</b> &nbsp;/dsremo</a>
+      <a class="clink" href="https://github.com/dsremo" target="_blank" rel="noopener"><b>GitHub</b> &nbsp;/dsremo (personal org)</a>
     </div>
     <footer>
       <span>© 2026 Ashutosh Tiwari</span>
@@ -426,15 +410,15 @@
     </footer>
   </div>
 </section>
+</main>
 
 <script>
-  // Faint constellation in the hero — quiet, and frozen for reduced-motion users.
   // Theme: respect saved choice, else system preference; toggle persists.
   (function(){
     var root = document.documentElement, btn = document.getElementById('theme-toggle');
     function apply(theme){
       root.setAttribute('data-theme', theme);
-      if(btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      if(btn){ btn.textContent = theme === 'dark' ? '☀️' : '🌙'; btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false'); }
       window.__readThemeColors && window.__readThemeColors();
     }
     var saved = null;
@@ -450,8 +434,9 @@
     var c = document.getElementById('sky');
     if(!c) return;
     var ctx = c.getContext('2d');
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var hero = c.parentElement, stars = [], DPR = Math.min(window.devicePixelRatio||1, 2);
+    var mql = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var reduce = mql.matches;
+    var hero = c.parentElement, stars = [], DPR = Math.min(window.devicePixelRatio||1, 2), running = false;
     var STAR = '58,65,80', LINK = '178,107,0';
     window.__readThemeColors = function(){
       var cs = getComputedStyle(document.documentElement);
@@ -472,7 +457,6 @@
     function draw(){
       var w = hero.clientWidth, h = hero.clientHeight;
       ctx.clearRect(0,0,w,h);
-      // links
       for(var i=0;i<stars.length;i++){
         for(var j=i+1;j<stars.length;j++){
           var a=stars[i], b=stars[j], dx=a.x-b.x, dy=a.y-b.y, d=Math.sqrt(dx*dx+dy*dy);
@@ -487,13 +471,14 @@
         if(!reduce){ s.x+=s.vx; s.y+=s.vy;
           if(s.x<0||s.x>w) s.vx*=-1; if(s.y<0||s.y>h) s.vy*=-1; }
       }
-      if(!reduce) requestAnimationFrame(draw);
+      if(!reduce && running) requestAnimationFrame(draw);
     }
-    window.__readThemeColors(); size(); draw();
+    function start(){ if(!running){ running = true; if(!reduce) requestAnimationFrame(draw); else draw(); } }
+    if(mql.addEventListener) mql.addEventListener('change', function(e){ reduce = e.matches; if(!reduce){ running=false; start(); } else draw(); });
+    window.__readThemeColors(); size(); start();
     window.addEventListener('resize', function(){ size(); if(reduce) draw(); });
   })();
 
-  // Scroll reveals
   (function(){
     var els = document.querySelectorAll('.rv');
     if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
@@ -501,7 +486,6 @@
       es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
     }, {threshold:.12});
     els.forEach(function(e){ io.observe(e); });
-    // Safety net: never leave a section hidden if the observer misses it.
     setTimeout(function(){ els.forEach(function(e){ e.classList.add('in'); }); }, 1800);
   })();
 </script>
